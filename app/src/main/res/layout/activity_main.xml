@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_250"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/eldeco"
+                        android:contentDescription="@string/todo" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/eldeco_mansionz"
+                       android:gravity="center"
+                       android:textSize="@dimen/sp_18"
+                       android:textStyle="bold"
+                       android:textColor="@color/colorPrimary"
+                       />
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/dp_24"
+                   android:layout_marginRight="@dimen/dp_24"
+                   android:layout_marginTop="@dimen/dp_24"
+                   >
+
+
+                   <ImageView
+                       android:id="@+id/image_view_mob"
+                       android:layout_width="@dimen/dp_24"
+                       android:layout_height="@dimen/dp_24"
+                       android:layout_marginTop="@dimen/dp_8"
+                       android:scaleType="centerInside"
+                       android:src="@drawable/mob"
+                       android:contentDescription="@string/todo1" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="@dimen/dp_16"
+                       android:layout_marginTop="@dimen/dp_8"
+                       android:layout_toEndOf="@+id/image_view_mob"
+                       android:textSize="@dimen/sp_16"
+                       android:text="@string/mob"
+                       android:autoLink="phone"/>
+
+                   <ImageView
+                       android:id="@+id/address_ico"
+                       android:layout_width="@dimen/dp_24"
+                       android:layout_height="@dimen/dp_24"
+                       android:layout_below="@+id/image_view_mob"
+                       android:layout_marginTop="@dimen/dp_10"
+                       android:scaleType="centerInside"
+                       android:src="@drawable/gps"
+                       android:contentDescription="@string/todo2" />
+
+                   <TextView
+                       android:id="@+id/address_text"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/image_view_mob"
+                       android:layout_marginStart="@dimen/dp_8"
+                       android:layout_marginTop="@dimen/dp_8"
+                       android:layout_toEndOf="@+id/address_ico"
+                       android:textSize="@dimen/sp_16"
+                       android:text="@string/add"
+                       />
+
+                   <ImageView
+                       android:id="@+id/clock"
+                       android:layout_width="@dimen/dp_24"
+                       android:layout_height="@dimen/dp_24"
+                       android:layout_below="@+id/address_ico"
+                       android:layout_marginTop="@dimen/dp_12"
+                       android:scaleType="centerInside"
+                       android:src="@drawable/clock"
+                       android:contentDescription="@string/todo3" />
+
+                   <TextView
+                       android:id="@+id/clock_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/address_ico"
+                       android:layout_marginStart="@dimen/dp_8"
+                       android:layout_marginTop="@dimen/dp_14"
+                       android:layout_toEndOf="@+id/clock"
+                       android:text="@string/time"
+                       android:textSize="@dimen/sp_16"
+                       />
+
+                   <ImageView
+                       android:id="@+id/email"
+                       android:layout_width="@dimen/dp_24"
+                       android:layout_height="@dimen/dp_24"
+                       android:layout_below="@+id/clock"
+                       android:layout_marginTop="@dimen/dp_8"
+                       android:scaleType="centerInside"
+                       android:src="@drawable/email"
+                       android:contentDescription="@string/todo4" />
+
+                   <TextView
+                       android:id="@+id/email_id"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/clock"
+                       android:layout_marginStart="@dimen/dp_8"
+                       android:layout_marginTop="@dimen/dp_8"
+                       android:layout_toEndOf="@+id/email"
+                       android:text="@string/web"
+                       android:textSize="@dimen/sp_16"
+                        android:autoLink="web"
+                       />
+
+               </RelativeLayout>
+               
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:textColor="@color/colorPrimary"
+                       android:textSize="@dimen/sp_16"
+                       android:text="@string/about"
+                       android:layout_margin="@dimen/dp_8"/>
+
+
+               </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
